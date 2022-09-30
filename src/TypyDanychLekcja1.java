@@ -1,50 +1,48 @@
 public class TypyDanychLekcja1 {
     public static void main(String[] args) {
 
-        //zmienne
+        //operatory matematyczne
 
-        //int - typ zmiennej dla liczb całkowitych
-        int number10; //typ zmiennej (INT) nazwa zmiennej (NUMBER10) = deklaracja zmiennej
-        number10 = 10; //nazwa zmiennej (NUMBER10) = wartość zmiennej = inicjalizacja zmiennej (przypisanie wartości do zmiennej)
+        System.out.println(2 + 2);
+        System.out.println(2 - 2);
+        System.out.println(2 * 2);
+        System.out.println(2 / 2);
 
-        System.out.println(number10);
+        System.out.println(10 / 4); //otrzymamy wynik 2 - używamy liczb całkowitych, więc wyjdzie liczba całkowita - należy użyć 10.0
+        System.out.println(10.0 / 4);
 
-        //skrót:
-        long number = 1000000000000000000L;
+        //zmiennoprzecinkowe dla liczb całkowitych
 
-        System.out.println(number);
+        double a = 10;
+        double b = 3;
 
-        //również
-        //byte b;
-        //short s;
-        //int i;
-        //long l; - na końcu dodajemy L, IntelliJ zaznaczy za dużą wartość
-        //w zależności od wartości
+        System.out.println(a / b);
 
-        //double - typ zmiennej dla liczb zmiennoprzecinkowych
-        double doubleNumber = 10.567;
+        //operatory porównania - czy wartość jest mniejsza, większa, równa, różna od innej
 
-        //również float f;
+        int numberOne = 2;
+        int numberTwo = 4;
 
-        System.out.println(doubleNumber);
+        //w odpowiedzi boolean true/false
+        System.out.println(numberOne > numberTwo);
+        System.out.println(numberOne < numberTwo);
+        System.out.println(numberOne == numberTwo);
+        System.out.println(numberOne != numberTwo);
 
-        //string - typ zmiennej dla tekstu - typ referencyjny/złożony
-        String myText = "my text in java";
+        //operatory logiczne
+        // || - lub
 
-        System.out.println(myText);
+        //jeżeli którakolwiek ze stron zwraca true, całość zwraca true
+        //jeżeli żadna ze stron nie zwraca true, całość zwraca false
 
-        //char - character - typ zmiennej dla pojedynczego znaku
-        char oneCharacter = 'a';
+        System.out.println(numberOne > numberTwo || numberOne == 1); //false || false = false
+        System.out.println(numberOne < numberTwo || numberOne == 3); //true || false = true (pierwsza wartość to true, więc druga wartość nie jest już sprawdzana)
+        System.out.println(numberOne > numberTwo || numberOne != 1); //false || true = true (pierwsza wartość jest sprawdzana, ale druga jest true)
 
-        System.out.println(oneCharacter);
+        //&& - i - obie strony muszą być true/false
 
-        //boolean - typ zmiennej prawda/fałsz
-        boolean trueValue = true;
-        boolean falseValue = false;
-
-        System.out.println(trueValue);
-        System.out.println(falseValue);
-
-
+        System.out.println(numberOne < numberTwo && numberOne == 2); //true && true = true
+        System.out.println(numberOne > numberTwo && numberTwo == 5); //false && false = false
+        System.out.println(numberTwo == numberOne && numberTwo == 4); //false && true = false
     }
 }
