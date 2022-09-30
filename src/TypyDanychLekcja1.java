@@ -1,8 +1,41 @@
 public class TypyDanychLekcja1 {
     public static void main(String[] args) {
-        //start aplikacji - wykonanie kodu - metoda main
 
-        System.out.println("This is my first program");
-            //wyświetlanie stringa na konsoli (system.out) - metoda sout
+        //zmienne
+
+        //int - typ zmiennej dla liczb całkowitych
+        int number10; //typ zmiennej (INT) nazwa zmiennej (NUMBER10) = deklaracja zmiennej
+        number10 = 10; //nazwa zmiennej (NUMBER10) = wartość zmiennej = inicjalizacja zmiennej (przypisanie wartości do zmiennej)
+
+        System.out.println(number10);
+
+        //skrót:
+        int number = 10;
+
+        System.out.println(number);
+
+        //double - typ zmiennej dla liczb zmiennoprzecinkowych
+        double doubleNumber = 10.567;
+
+        System.out.println(doubleNumber);
+
+        //string - typ zmiennej dla tekstu
+        String myText = "my text in java";
+
+        System.out.println(myText);
+
+        //char - character - typ zmiennej dla pojedynczego znaku
+        char oneCharacter = 'a';
+
+        System.out.println(oneCharacter);
+
+        //boolean - typ zmiennej prawda/fałsz
+        boolean trueValue = true;
+        boolean falseValue = false;
+
+        System.out.println(trueValue);
+        System.out.println(falseValue);
+
+
     }
 }
