@@ -44,5 +44,32 @@ public class TypyDanychLekcja1 {
         System.out.println(numberOne < numberTwo && numberOne == 2); //true && true = true
         System.out.println(numberOne > numberTwo && numberTwo == 5); //false && false = false
         System.out.println(numberTwo == numberOne && numberTwo == 4); //false && true = false
+
+        //ćwiczenie
+        System.out.println(123+123);
+        System.out.println(987-876);
+        System.out.println((57*76)-(654+234));
+        System.out.println(2*(3*3));
+
+        double x = 123;
+        double z = 17;
+
+        System.out.println(x/z);
+
+        int fifty = 50;
+        int hundred = 100;
+
+        System.out.println(fifty > hundred || fifty == hundred);
+        System.out.println(fifty != hundred || fifty < hundred);
+        System.out.println(fifty == hundred || fifty < hundred);
+
+        int five = 5;
+        int ten = 10;
+
+        System.out.println(five > ten && five == ten);
+        System.out.println(five < ten && five == ten);
+        System.out.println(five < ten && five != ten);
+
+
     }
 }
