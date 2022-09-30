@@ -10,16 +10,25 @@ public class TypyDanychLekcja1 {
         System.out.println(number10);
 
         //skrót:
-        int number = 10;
+        long number = 1000000000000000000L;
 
         System.out.println(number);
+
+        //również
+        //byte b;
+        //short s;
+        //int i;
+        //long l; - na końcu dodajemy L, IntelliJ zaznaczy za dużą wartość
+        //w zależności od wartości
 
         //double - typ zmiennej dla liczb zmiennoprzecinkowych
         double doubleNumber = 10.567;
 
+        //również float f;
+
         System.out.println(doubleNumber);
 
-        //string - typ zmiennej dla tekstu
+        //string - typ zmiennej dla tekstu - typ referencyjny/złożony
         String myText = "my text in java";
 
         System.out.println(myText);
