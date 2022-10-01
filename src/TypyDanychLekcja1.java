@@ -1,54 +1,34 @@
 public class TypyDanychLekcja1 {
     public static void main(String[] args) {
 
-        //instrukcje sterujące
-        //if-else
+        //nazwy klas pisane są wielką literą
+        //Dane, TypyDanych itp.
 
-        if (true) {
-            System.out.println("true testing"); //wartość wyświetla się w konsoli
+        //nazwy zmiennych pisane są małą literą
+        //rodzaje zmiennej - głównie String dużą literą
+        String nazwaZmiennej = "to jest moja zmienna";
+        int number = 10;
+        char aToB = 'a';
+        boolean isFalse = false;
+
+        //formatowanie kodu
+        //ctrl + alt + L - porządkuje kod
+
+        //operator modulo - reszta z dzielenia - %
+
+        System.out.println(10 % 5); //reszta z dzielenia 0 (2*5=10)
+        System.out.println(10 % 6); //reszta z dzielenia 4
+
+        //sprawdzenie, czy liczba jest parzysta
+
+        if (10 % 2 == 0) {
+            System.out.println("10 lest liczbą parzystą");
         }
-        if (false) {
-            System.out.println("true testing false"); //wartość nie wyświetla się w konsoli
-        }
 
-        int numberOne = 2;
-        int numberTwo = 4;
-
-        if (numberOne < numberTwo)
-            System.out.println("number One is less than number Two");
-        if (numberOne > numberTwo)
-            System.out.println("number One is more than number Two"); //fałsz - nie wyświetla się
-
-        if (numberOne > numberTwo) {
-            System.out.println("One is less than Two");
-        } else { //boolean
-            System.out.println("One is more than Two"); //warunek 1 jest fałszem, więc wyświetla się warunek drugi
-        }
-
-        //switch
-
-        String homePage = "Home";
-        String loginPage = "Login";
-        String contactPage = "Contact";
-
-        String page = "defaultPage";
-
-        switch(page){ //przełączanie się pomiędzy wartościami
-            case "Home": //przełączamy się na stronę HOME
-                System.out.println("Switching on Home page");
-                break; //wychodzenie z przełącznika/instrukcji sterującej
-
-            case "Login":
-                System.out.println("Switching on Login page");
-                break;
-
-            case "Contact":
-                System.out.println("Switching on Contact page");
-                break;
-
-            default: //wartość dowolna, gdy nie chcemy przyjmować żadnej z wymienionych
-                System.out.println("Page not found");
-                //bez break
+        if (17 % 2 == 0) {
+            System.out.println("17 jest liczbą parzystą");
+        } else {
+            System.out.println("17 nie jest liczbą parzystą");
         }
     }
 }
